@@ -1,0 +1,196 @@
+.container
+{
+    max-width: 1000px;
+    margin: auto;
+}
+.container >header > a > .logo
+    {
+        position: relative;
+        left: 50px;
+        top: 2px;
+    }
+    
+    .menu>ul>li
+    {
+        display: inline-block;
+        position: relative;
+    }
+    .menu>ul> .user
+    {
+        margin-left: 230px;
+    }
+    .menu>ul>li>a
+    {
+        display: block;
+        text-decoration: none;
+        font-variant: small-caps;
+        color: white;
+        padding: 0 10px;
+        line-height: 40px;
+        font-size: small;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .menu>ul
+    {
+        padding: 0px;
+        margin: 0px;
+        list-style: none;
+        border-radius: 3px;
+        background-color:  gray;
+    }
+    .menu>ul>li>a:hover
+    {
+        color: black;
+        background-color: aliceblue;
+    }
+    .menu ul ul
+    {
+        position: absolute;
+        display: none;
+        padding: 0px;
+        margin: 0px;
+        list-style: none;
+        border-radius: 3px;
+        width: 200px;
+        background-color: white;
+        box-shadow: 0 0 1px gray;
+    }
+    .menu ul ul a
+    {
+        font-variant: small-caps;
+        display: block;
+        line-height: 30px;
+        text-decoration: none;
+        padding: 0 10px;
+        font-size: x-small;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .menu>ul>li:hover>ul
+    {
+        display: block;
+    }
+    .menu ul ul a:hover
+    {
+        background-color: gray;
+        color: white;
+    }
+    .end
+    {
+        height: 150px;
+        background-color: #323232;
+        display: flex;
+        justify-content: space-around;
+    }
+    .end > .Supportmore
+    { 
+        float: left;
+        font-size: x-small;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: aliceblue;
+        font-variant: small-caps;
+    }
+    .end > .Supportaccount
+    {
+        float: left;
+        font-size: x-small;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: aliceblue;
+        font-variant: small-caps;
+    }
+    .end > .informationcontact
+    {
+        font-size: x-small;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: aliceblue;
+        font-variant: small-caps;
+    }
+    .end > .informationcontact ul a
+    {
+        text-decoration: none;
+        color: brown;
+        font-variant: small-caps;
+    }
+    .end > .Supportaccount ul a
+    {
+        text-decoration: none;
+        color: brown;
+        font-variant: small-caps;
+    }
+    .end > .Supportmore ul a
+    {
+        text-decoration: none;
+        color: brown;
+        font-variant: small-caps;
+    }
+    .thongtinacsalekhac1
+    {
+        width: 100px;
+        transition: transform .2s;
+        color: red;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-variant: small-caps;
+    }
+    .thongtinacsalekhac1:hover
+    {
+        transform: scale(1.5);
+    }
+    aside > iframe{
+        position: relative;
+        width: 100%;
+        height: 500px;
+    }
+    .slider 
+    {
+        position: relative;
+        height: 200px;
+    }
+    .slide-item 
+    {
+        position: absolute;
+        left: 30;
+        top: 0;
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.5s;
+    }
+    input,label 
+    {
+        display: none;
+    }
+    input:checked + .slide-item 
+    {
+        visibility: visible;
+        opacity: 1;
+    }
+    input#slide-1:checked ~ label.slide-1,
+    input#slide-2:checked ~ label.slide-2,
+    input#slide-3:checked ~ label.slide-3 
+    {
+        display: block;
+    }
+    label 
+    {
+        position: absolute;
+        top: 120%;
+        transform: translateY(-50%);
+        left: 10px;
+        cursor: pointer;
+        padding: 5px;
+        background: #000;
+        color: #fff;
+        padding: 7.5px 10px;
+    }
+    label.next 
+    {
+        right: 10px;
+        left: auto;
+    }
+    article
+    {
+        height: 560px;
+    }
+    .taikhoanmoicapnhat
+    {
+        text-align: center;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
